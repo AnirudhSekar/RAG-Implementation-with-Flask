@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RAG Question Answering with Ollama</title>
+</head>
+<body>
+    <h1>RAG Question Answering with Ollama</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" required><br><br>
+        <input type="text" name="query" placeholder="Enter your question" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    {% if result %}
+        <h2>Answer:</h2>
+        <p>{{ result }}</p>
+    {% endif %}
+</body>
+</html>
